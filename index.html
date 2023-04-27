@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Cronómetro</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500&family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+
+    <body>
+        <h1 class="title">Stop Watch</h1>
+        <main>
+            <div class="circle">
+                <div id="stopwatch" class="stopwatch">00:00</div>
+
+                <div class="buttons">
+                    <div class="stop" onclick="stop()"></div>
+
+                    <div id="play-pause" class="paused" onclick="playPause()"></div>
+                </div>
+                <div id="seconds-circle" class="seconds-circle"></div>
+            </div>
+        </main>
+
+        <p class="by">by Facundo Burgos</p>
+    </body>
+
+    <script src="script.js"></script>
+</html>
